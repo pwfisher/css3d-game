@@ -763,42 +763,7 @@
   }
 
   function _makeDebug(game, _log_level, _debug) {
-    game.LOG = function (a, b, c, d, e, f, g, h, i) {
-      if (a > _log_level) return;
-
-      var log = console.log;
-      if (i !== undefined) {
-        log(b, c, d, e, f, g, h, i);
-        return;
-      }
-      if (h !== undefined) {
-        log(b, c, d, e, f, g, h);
-        return;
-      }
-      if (g !== undefined) {
-        log(b, c, d, e, f, g);
-        return;
-      }
-      if (f !== undefined) {
-        log(b, c, d, e, f);
-        return;
-      }
-      if (e !== undefined) {
-        log(b, c, d, e);
-        return;
-      }
-      if (d !== undefined) {
-        log(b, c, d);
-        return;
-      }
-      if (c !== undefined) {
-        log(b, c);
-        return;
-      }
-
-      log(b);
-    };
-
+    game.LOG = (level, ...rest) => level < _log_level && console.log(...rest);
     game.DEBUG = _debug;
     game.__camera = function () {};
     game.__move = function () {};
