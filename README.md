@@ -2,12 +2,10 @@
 
 First person adventure game rendered in CSS/HTML - play online here -> https://pantel.is/projects/css3d/
 
-
 This is a 3D game written in Vanilla Javascript, and rendered entirely in HTML/CSS. You can use the developer tools for example and inspect the geometry
 
 ![css geometry](https://pantelis.s3-us-west-2.amazonaws.com/0/css3d/readme/css-geom.png)
 ![css geometry 2](https://pantelis.s3-us-west-2.amazonaws.com/0/css3d/readme/moon.png)
-
 
 It supports lighting, shadows, interactions, and complex geometry that can consist of triangles.
 
@@ -19,5 +17,3 @@ It supports lighting, shadows, interactions, and complex geometry that can consi
 ---
 
 (code currently is a but messy, but I am refactoring it!)
-
-
